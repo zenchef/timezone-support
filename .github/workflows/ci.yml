@@ -7,6 +7,10 @@ on:
 jobs:
   test-or-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
     steps:
     - name: Checkout Sources
       uses: actions/checkout@v2
